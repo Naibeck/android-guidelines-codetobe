@@ -4,7 +4,7 @@
 Every project should follow the Android Gradle project structure defined on the [Android Gradle plugin user guide](http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Project-Structure).
 
 ### 1.1.1 Main Package name
-Every project developed under CodeToBe must match the package name as: `com.codetobe.__projectname__`. 
+Every project developed under CodeToBe must match the package name as: `com.codetobe.projectname`. 
 
 ### 1.1.2 Package Names
 Packages should be named on singular and have to describe in one word what is going to be inside of it, eg: `com.codetobe.projectname.ui.activity` will contain all classes that extends Activity, `com.codetobe.projectname.model` will contain all the POJO classes that work as models.
