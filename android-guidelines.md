@@ -91,7 +91,9 @@ Do not add the word `menu` as part of the name because all files are already in 
 
 ## 1.3 Naming Variables & Views
 
-### 1.3.1 XML Ids
+### 1.3.1 XML code
+
+#### 1.3.1.1 XML Ids
 When a view requires an Id, you should write an unique element that is not going to be in another xml file or files.
 To provide the id name you should start naming with the view name in acronym + xml file name + function or behavior that will hold this view, eg:  `et_login_username`, `tv_profile_username`, `iv_profile_user_picture`.
 **Notice: All ids must be in lower case and separated by `_`**
@@ -103,3 +105,16 @@ To provide the id name you should start naming with the view name in acronym + x
 | EditText     	| `et_`      	  | `et_signup_address`	        |
 | RelativeLayout| `rl`     	  | `rl_signup_container`       |
 
+#### 1.3.1.2 XML dimen
+Keep as a good practice to write all dimensions in the dimen files; if the project needs specific dimensions in a particular view add it with a unique name, eg: `profile_picture_max_width`.
+On your dimen files you should keep it as:
+
+> <ImageView
+        android:id="@+id/iv_profile_username"
+        android:layout_width="@dimen/profile_picture_size"
+        android:layout_height="@dimen/profile_picture_size"
+	..
+
+And your dimens file should look like:
+
+> < dimen name="profile_picture_size">65dp</ dimen>
