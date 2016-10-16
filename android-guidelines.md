@@ -89,3 +89,17 @@ Naming conventions for selector states:
 All files inside menu should match the component name, followed by the class name, eg: `activity_login`.
 Do not add the word `menu` as part of the name because all files are already in a folder named menu.
 
+## 1.3 Naming Variables & Views
+
+### 1.3.1 XML Ids
+When a view requires an Id, you should write an unique element that is not going to be in another xml file or files.
+To provide the id name you should start naming with the view name in acronym + xml file name + function or behavior that will hold this view, eg:  `et_login_username`, `tv_profile_username`, `iv_profile_user_picture`.
+**Notice: All ids must be in lower case and separated by `_`**
+
+| View	       	| Preffix         | Example                     |
+|---------------|-----------------|-----------------------------|
+| TextView     	| `tv_`       	  | `tv_profile_username`       |
+| ImageView    	| `iv_`      	  | `iv_friend_profile_picture` |
+| EditText     	| `et_`      	  | `et_signup_address`	        |
+| RelativeLayout| `rl`     	  | `rl_signup_container`       |
+
